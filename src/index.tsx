@@ -9,7 +9,7 @@ const app = (
 		<React.StrictMode>
 			<App />
 			<Helmet>
-				<title>QudStack</title>
+				<title>DarwisStack</title>
 			</Helmet>
 		</React.StrictMode>
 	</HelmetProvider>
