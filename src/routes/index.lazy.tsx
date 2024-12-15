@@ -1,13 +1,13 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
-
+import { ComponentChart } from "@/components/part/componentChart";
 export const Route = createLazyFileRoute("/")({
-	component: Index,
+  component: Index,
 });
 
 function Index() {
-	return (
-		<div className="">
-			<h3 className="text-red-500">Welcome Home!</h3>
-		</div>
-	);
+  return (
+    <main className="border border-gray-200 rounded-lg p-4 h-full w-full">
+      <ComponentChart />
+    </main>
+  );
 }
