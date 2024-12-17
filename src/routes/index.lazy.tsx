@@ -1,23 +1,24 @@
-import { createLazyFileRoute } from "@tanstack/react-router";
-import { ComponentChart } from "@/components/part/componentChart";
-import AppTable from "@/components/part/app-table";
-import AppCards from "@/components/part/app-cards";
+import { createLazyFileRoute, Link } from "@tanstack/react-router";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 export const Route = createLazyFileRoute("/")({
   component: Index,
 });
 
 function Index() {
   return (
-    <main className="h-full w-full mt-4 p-4 space-y-4">
-      <div>
-        <h1 className="text-2xl font-semibold">Dashboard</h1>
-        <p className="text-sm text-gray-500">
-          Welcome back, Darwis! Here's what's happening with your projects today.
-        </p>
-      </div>
-      <AppCards />
-      <ComponentChart />
-      <AppTable />
+    <main className="h-screen w-full mt-4 p-4 space-y-4 flex items-center flex-col justify-center">
+      <h1 className="text-3xl text-center">Welcome to Mengah Holding. This is the landing page!!</h1>
+      <Card className="w-[300px] mx-auto mt-20">
+        <CardContent className="flex flex-col items-center space-y-4 pt-8">
+          <Link to="/login">
+            <Button>Login</Button>
+          </Link>
+          <Link to="/signup">
+            <Button>Sign Up</Button>
+          </Link>
+        </CardContent>
+      </Card>
     </main>
   );
 }
