@@ -19,7 +19,6 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarProvider,
   SidebarFooter,
 } from "@/components/ui/sidebar";
 import {
@@ -57,7 +56,7 @@ const items = [
     icon: Inbox,
   },
   {
-    title: "Test",
+    title: "Calendar",
     url: "/test",
     icon: Calendar,
   },
